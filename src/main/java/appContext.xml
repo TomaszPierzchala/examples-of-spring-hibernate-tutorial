@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+       
+       <context:property-placeholder location="classpath:sports.properties"/>
+       
+       <bean id="supportService" class="eu.tp.spring.spring_demo.MySupportService" />
+       <bean id="randomService" class="eu.tp.spring.spring_demo.RandomSupportService"/>
+
+       <bean id="theCoach" class="eu.tp.spring.spring_demo.FootballCoach" name="ala ola, ela"
+       	init-method="startMethod" destroy-method="stopMethod">
+       	<constructor-arg ref="randomService"></constructor-arg>
+       </bean>
+       
+       <bean id="myCricketCoach" class="eu.tp.spring.spring_demo.CricketCoach">
+       	<property name="support" ref="randomService"></property>
+       	<property name="name" value="${cricket.name}"/>
+       	<property name="age" value="${cricket.age}"/>
+       </bean>
+ </beans>
