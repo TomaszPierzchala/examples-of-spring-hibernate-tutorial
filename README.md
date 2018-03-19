@@ -1,7 +1,9 @@
 # examples-of-spring-hibernate-tutorial
 Contains examples of test code based on<sup id="a1">[1](#f1)</sup> https://www.udemy.com/spring-hibernate-tutorial
 
-(*NOTE*) **Different** examples - **Java projects** are located at **different branches**:
+(*NOTE*) 
+- At least Java Development Kit 1.8
+- **Different** examples - **Java projects** are located at **different branches**:
 
 
 #### spring-xml-configuration :
