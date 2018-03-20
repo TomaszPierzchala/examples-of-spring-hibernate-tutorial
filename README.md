@@ -13,5 +13,11 @@ Contains examples of test code based on<sup id="a1">[1](#f1)</sup> https://www.u
 
 #### spring-annotation-configuration :
    Spring configuration with annotation @Component with @Autowired, @Qualifier("someName") or @Resource(name = "someName").
+
+#### spring-java-configuration :
+   Spring configuration with Java class annotated @Configuration, loaded with 
+   AnnotationConfigApplicationContext(ConfigurationClass.class) in main function.
+   One can test order of Injection (Constructor, Field, factory method and setter).
+
 ___
 1. <small id="f1"> Additionaly I use maven to download libraries as well as some code variations.  </small> [↩](#a1)
