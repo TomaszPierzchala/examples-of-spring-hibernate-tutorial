@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class BikeCoach implements Coach {
 
+	// second injection order
 	@Resource(name = "happyFortuneService")
 	private FortuneService service;
 	
@@ -20,11 +21,11 @@ public class BikeCoach implements Coach {
 		return service.getDailyFortune();
 	}
 
-
-//	@Autowired
+	// first injection order, below @Qualifier is just recommendation
+	//	@Autowired
 	public BikeCoach(@Qualifier("happyFortuneService") FortuneService service) {
 		super();
-		System.out.println("BikeCoaach(service)");
+		System.out.println("BikeCoaach(service) : I have loaded " + service.getClass());
 		this.service = service;
 	}
 

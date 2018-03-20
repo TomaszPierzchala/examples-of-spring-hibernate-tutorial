@@ -22,6 +22,7 @@ public class ConfigurationClass {
 	
 	@Bean
 	public FortuneService service() {
+		System.out.println("First loading RandomFortuneService.class");
 		return new RandomFortuneService();
 	}
 	
