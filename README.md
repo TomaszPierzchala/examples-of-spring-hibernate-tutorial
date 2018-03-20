@@ -13,6 +13,7 @@ Contains examples of test code based on<sup id="a1">[1](#f1)</sup> https://www.u
 
 #### spring-annotation-configuration :
    Spring configuration with annotation @Component with @Autowired, @Qualifier("someName") or @Resource(name = "someName").
+   One can test order of Injection (Constructor, Field, factory method and setter).
 
 #### spring-java-configuration :
    Spring configuration with Java class annotated @Configuration, loaded with 
