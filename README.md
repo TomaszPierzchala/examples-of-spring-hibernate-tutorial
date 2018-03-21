@@ -23,7 +23,7 @@ Contains examples of test code based on<sup id="a1">[1](#f1)</sup> https://www.u
 ### Spring MVC
 #### spring-mvc-demo :
    Example of simple MVC web application on embeded Tomcat.
-   Forms with validation (even custome one - @StartDate).
+   Forms with validation (also custome one - @StartDate).
    
    To run *launch/Main.java*  ➪  [localhost:8080](http://localhost:8080)
 
