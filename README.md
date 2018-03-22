@@ -6,22 +6,22 @@ Contains examples of test code based on<sup id="a1">[1](#f1)</sup> https://www.u
 - **Different** examples - **Java projects** are located at **different branches**:
 
 ### Spring Configuration
-#### spring-xml-configuration :
+#### 01-spring-xml-configuration :
    Starting, project showing how to configure **Spring with a xml file**.
    Dependency Injection is presented with *SupportService* interface as well as shows when
    init-method, destroy-method and Object finalize() are called.
 
-#### spring-annotation-configuration :
+#### 02-spring-annotation-configuration :
    Spring configuration with annotation @Component with @Autowired, @Qualifier("someName") or @Resource(name = "someName").
    One can test order of Injection (Constructor, Field, factory method and setter).
 
-#### spring-java-configuration :
+#### 03-spring-java-configuration :
    Spring configuration with Java class annotated @Configuration, loaded with 
    AnnotationConfigApplicationContext(ConfigurationClass.class) in main function.
    One can test order of Injection (Constructor, Field, factory method and setter).
    
 ### Spring MVC
-#### spring-mvc-demo :
+#### 04-spring-mvc-demo :
    Example of simple MVC web application on embeded Tomcat.
    Forms with validation (also custome one - @StartDate).
    
