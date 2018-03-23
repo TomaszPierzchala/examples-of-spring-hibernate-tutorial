@@ -30,4 +30,4 @@ Contains examples of test code based on<sup id="a1">[1](#f1)</sup> https://www.u
    
 
 ___
-1. <small id="f1">. Additionaly I use maven to download libraries as well as some code variations.  </small> <a id="f1" href="#a1">↩</a>
+1. <small id="f1">Additionaly I use maven to download libraries as well as some code variations.  </small> <a id="f1" href="#a1">↺</a>
