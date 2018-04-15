@@ -29,7 +29,7 @@ Contains examples of test code based on<sup id="a1">[1](#f1)</sup> https://www.u
 
  ### Hibernate
  #### 05-hibernate-crud-programmaticTx
-   CRUD with Hibernate with programmaticaly controled transactions under JUnit with embedded DB (HSQL, H2 or DERBY).
+   CRUD with Hibernate with programmatically controlled transactions under JUnit with embedded DB (HSQL, H2 or DERBY).
    
    Also use some of [Mkyong.com](https://www.mkyong.com/spring/spring-embedded-database-examples/)
    
