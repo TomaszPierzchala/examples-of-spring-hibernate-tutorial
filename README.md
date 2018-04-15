@@ -33,7 +33,6 @@ Contains examples of test code based on<sup id="a1">[1](#f1)</sup> https://www.u
    
    Also use some of [Mkyong.com](https://www.mkyong.com/spring/spring-embedded-database-examples/)
    
-   (**under construction now**)
    
 ___
 1. <small id="f1">Additionaly I use maven to download libraries as well as some code variations.  </small> <a id="f1" href="#a1">↺</a>
