@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.tp</groupId>
-	<artifactId>junit_simple_hibernate_w_embedded_db</artifactId>
+	<artifactId>junit_hibernate_w_embedded_db</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>JUnit for Hibernate with Embedded DB Example</name>
-	<description>Demonstartes JUnit JDBC Hibernate use with Embedded DB</description>
+	<description>Demonstartes JUnit for Hibernate use with Embedded DB</description>
 
 	<properties>	
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -19,11 +19,11 @@
 	</properties>
 	
 	<dependencies>
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
-		</dependency> -->
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
