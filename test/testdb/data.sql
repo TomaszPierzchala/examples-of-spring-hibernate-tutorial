@@ -3,7 +3,7 @@ insert into EMPLOYEE (first_name, last_name, company) values ('Keri', 'Lee', 'Co
 insert into EMPLOYEE (first_name, last_name, company) values ('Dollie R.', 'Schnidt', 'Coca-Cola');
 insert into EMPLOYEE (first_name, last_name, company) values ('Cornelia J.', 'LeClerc', 'Coca-Cola');
 insert into EMPLOYEE (first_name, last_name, company) values ('Cynthia', 'Rau', 'Coca-Cola');
-insert into EMPLOYEE (first_name, last_name, company) values ('Douglas R.', 'Cobbs', 'Coca-Cola');
+insert into EMPLOYEE (first_name, last_name, company) values ('Douglas R.', 'Cobbs', 'Google');
 insert into EMPLOYEE (first_name, last_name, company) values ('Michael', 'Patel', 'Coca-Cola');
 insert into EMPLOYEE (first_name, last_name, company) values ('Suzanne', 'Wong', 'Coca-Cola');
 insert into EMPLOYEE (first_name, last_name, company) values ('Ivan C.', 'Jaya', 'Coca-Cola');
@@ -12,11 +12,11 @@ insert into EMPLOYEE (first_name, last_name, company) values ('Laina Ochoa', 'Lu
 insert into EMPLOYEE (first_name, last_name, company) values ('Wesley M.', 'Montana', 'Coca-Cola');
 insert into EMPLOYEE (first_name, last_name, company) values ('Leslie F.', 'McCleary', 'Coca-Cola');
 insert into EMPLOYEE (first_name, last_name, company) values ('Sayeed D.', 'Mudra', 'Coca-Cola');
-insert into EMPLOYEE (first_name, last_name, company) values ('Pietronella J.', 'Domingo', 'Coca-Cola');
+insert into EMPLOYEE (first_name, last_name, company) values ('Pietronella J.', 'Domingo', 'Google');
 insert into EMPLOYEE (first_name, last_name, company) values ('John S.', 'O''Leary', 'Coca-Cola');
-insert into EMPLOYEE (first_name, last_name, company) values ('Gladys D.', 'Smith', 'Coca-Cola');
+insert into EMPLOYEE (first_name, last_name, company) values ('Gladys D.', 'Smith', 'Google');
 insert into EMPLOYEE (first_name, last_name, company) values ('Sally O.', 'Thygesen', 'Coca-Cola');
 insert into EMPLOYEE (first_name, last_name, company) values ('Rachel', 'Vogt', 'Coca-Cola');
 insert into EMPLOYEE (first_name, last_name, company) values ('Julia', 'DeLong', 'Coca-Cola');
-insert into EMPLOYEE (first_name, last_name, company) values ('Mark T.', 'Rizzoli', 'Coca-Cola');
+insert into EMPLOYEE (first_name, last_name, company) values ('Mark T.', 'Rizzoli', 'Google');
 insert into EMPLOYEE (first_name, last_name, company) values ('Maria J.', 'Angelo', 'Coca-Cola');

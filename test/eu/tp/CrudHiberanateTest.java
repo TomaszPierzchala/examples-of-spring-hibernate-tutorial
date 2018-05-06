@@ -38,7 +38,6 @@ class CrudHiberanateTest {
 		try (SessionFactory factory = new Configuration().configure("hibernate.cfg.xml")
 						.addAnnotatedClass(Employee.class).buildSessionFactory()) {
 			try (Session session = factory.getCurrentSession()) {
-
 				
 				List<Employee> empList = new ArrayList<Employee>();
 				empList.add(new Employee("All", "Bundy", "Coca-Cola"));
@@ -46,6 +45,7 @@ class CrudHiberanateTest {
 				empList.add(new Employee("Mike", "Nord", "Pepsi"));
 
 				session.beginTransaction();
+				// Before
 				int size = session.createQuery("from Employee").getResultList().size();
 				Assert.assertEquals(21, size);
 				
@@ -54,20 +54,45 @@ class CrudHiberanateTest {
 				//
 				size = session.createQuery("from Employee").getResultList().size();
 				Assert.assertEquals(24, size);
-
+				
+				session.getTransaction().commit();
+			}
+			
+			try (Session session = factory.getCurrentSession()) {
+				session.beginTransaction();
+				
 				// Update
-				session.createQuery("update Employee set company = 'Coca-Cola' where company = 'Apple'")
+				session.createQuery("update Employee set company = 'Apple' where company = 'Coca-Cola'")
 						.executeUpdate();
-
+				
+				session.getTransaction().commit();
+			}
+			
+			try (Session session = factory.getCurrentSession()) {
+				session.beginTransaction();
 				
 				// Read (from ... where)
+				int size = session.createQuery("from Employee where company = 'Apple'").getResultList().size();
+				Assert.assertEquals(19, size);
+
 				size = session.createQuery("from Employee where company = 'Pepsi'").getResultList().size();
 				Assert.assertEquals(1, size);
 				
+				size = session.createQuery("from Employee where company = 'Google'").getResultList().size();
+				Assert.assertEquals(4, size);
+				
+				session.getTransaction().commit();
+			}
+			
+			try (Session session = factory.getCurrentSession()) {
+				session.beginTransaction();
+				
 				// Delete
-				// session.createQuery("delete from Employee").executeUpdate();
-				// empList.forEach(session::save);
-
+				session.createQuery("delete from Employee where company = 'Pepsi'").executeUpdate();
+				int size = session.createQuery("from Employee").getResultList().size();
+				Assert.assertEquals(23, size);
+				
+				session.getTransaction().commit();
 			}
 		}
 	}
