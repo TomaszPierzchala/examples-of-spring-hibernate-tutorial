@@ -81,6 +81,14 @@ class CrudHiberanateTest {
 				size = session.createQuery("from Employee where company = 'Google'").getResultList().size();
 				Assert.assertEquals(4, size);
 				
+				// session.get
+				int ID  = 13;
+				Employee empl_hsql = (Employee) session.createQuery("from Employee where id = " + ID).getSingleResult();
+				Assert.assertEquals(ID, empl_hsql.getId());
+				
+				Employee empl_sessionGet = session.get(Employee.class, ID);
+				Assert.assertEquals(empl_hsql, empl_sessionGet);
+				
 				session.getTransaction().commit();
 			}
 			
