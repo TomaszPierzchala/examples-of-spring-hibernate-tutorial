@@ -9,7 +9,7 @@ import javax.persistence.Id;
 @Entity
 public class Employee {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	// @GeneratedValue(strategy=GenerationType.IDENTITY)
 	// column by default as name
 	private int id;
 	
@@ -23,6 +23,14 @@ public class Employee {
 	private String company;
 
 	public Employee() {
+	}
+
+	public Employee(int id, String firstName, String lastName, String company) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.company = company;
 	}
 
 	public Employee(String firstName, String lastName, String company) {
